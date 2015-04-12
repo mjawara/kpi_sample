@@ -1,0 +1,84 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='utf8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        
+    title KPI Management Software
+    link(rel='stylesheet', href='/vendor/lumx/dist/lumx.css')
+    link(rel='stylesheet', href='/vendor/mdi/materialdesignicons.css')
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700')
+    link(rel='stylesheet', href='/css/app.css')
+        
+    body(ng-app="App")
+
+        .toolbar.bgc-indigo-500(ng-controller="ToolbarController")
+            div(class="toolbar__left mr++")
+                button.btn.btn--l.btn--white.btn--icon(ng-click="gohome()", lx-ripple, lx-dropdown-toggle)
+                    i.mdi.mdi-windows
+                        
+            span.toolbar__label.fs-headline.tc-white-1 KPI Indicator
+                
+            .toolbar__right
+                lx-dropdown(position="right", from-top)
+                    a.btn.btn--l.btn--white.btn--icon(href="/", lx-ripple, lx-dropdown-toggle)
+                        i.mdi.mdi-chart-line
+                    lx-dropdown-menu
+                        ul
+                            li
+                                a.dropdown-link ตัวชี้วัดกระทรวง
+                            li
+                                a.dropdown-link ตัวชี้วัดเขต
+                            li
+                                a.dropdown-link ตัวชี้วัดจังหวัด
+                            li.dropdown-divider
+                            li
+                                a.dropdown-link ตัวชี้วัด QOF
+                            
+                            li
+                                a.dropdown-link ตัวชี้วัด สปสช.
+                lx-dropdown(position="right", from-top)
+                    button.btn.btn--l.btn--white.btn--icon(lx-ripple, lx-dropdown-toggle)
+                        i.mdi.mdi-email-outline
+                    lx-dropdown-menu
+                        ul
+                            li
+                                a.dropdown-link Login
+                            li
+                                a.dropdown-link Register
+                    lx-dropdown(position="right", from-top)
+                        button.btn.btn--l.btn--white.btn--icon(lx-ripple, lx-dropdown-toggle)
+                            i.mdi.mdi-account-location
+                        lx-dropdown-menu
+                            ul
+                                li
+                                    a.dropdown-link Login
+                                li
+                                    a.dropdown-link Register                
+                lx-dropdown(position="right", from-top)
+                    button.btn.btn--l.btn--white.btn--icon(lx-ripple, lx-dropdown-toggle)
+                        i.mdi.mdi-dots-vertical
+                    lx-dropdown-menu
+                        ul
+                            li
+                                a.dropdown-link Action
+                            li
+                                a.dropdown-link Hello
+        .card
+            div(class="p+")
+                block content
+            
+        script(src='/vendor/jquery/dist/jquery.min.js')
+        script(src='/vendor/velocity/velocity.min.js')
+        script(src='/vendor/moment/min/moment-with-locales.js')
+        script(src='/vendor/angular/angular.js')
+        script(src='/vendor/lumx/dist/lumx.js')
+        
+        script(src="/vendor/angular-route/angular-route.min.js")
+            
+        //- Main scripts
+        script(src='/js/app.js')
+        //- Application script
+        script(src="/js/dashboard/DashboardController.js")
+        script(src="/js/kpis/KpiController.js")

@@ -1,0 +1,326 @@
+
+div(class="tc-white-1", flex-container="row", flex-gutter="24")
+    div(flex-item="4")
+        div(class="p+ bgc-grey-100") 
+            | flex = 4
+            br
+            br
+            br
+            br
+    div(flex-item="4")
+        div(class="p+ bgc-grey-100") 
+            | flex = 4
+            br
+            br
+            br
+            br
+    div(flex-item="4")
+        div(class="p+ bgc-grey-100") 
+            | flex = 4
+            br
+            br
+            br
+            br
+br
+div(class="tc-white-1", flex-container="row", flex-gutter="24")
+    div(flex-item="4")
+        div(class="p+ bgc-grey-100") 
+            | flex = 4
+            br
+            br
+            br
+            br
+    div(flex-item="4")
+        div(class="p+ bgc-grey-100") 
+            | flex = 4
+            br
+            br
+            br
+            br
+    div(flex-item="4")
+        div(class="p+ bgc-grey-100") 
+            | flex = 4
+            br
+            br
+            br
+            br
+                                                                 
+div(class="mt++", flex-container="row", flex-gutter="24")
+    div(flex-item) 
+        .fs-title.display-block 
+            i.icon.icon--l.icon--green.icon--flat.mdi.mdi-tooltip-image
+            | &nbsp; ตัวชี้วัดกระทรวง
+        .data-table-container
+            table.data-table.data-table--has-secondary
+                thead
+                    tr
+                        th รหัส
+                        th ชื่อตัวชี้วัด
+                        th %
+                        th 
+                    tr
+                        td(colspan="4").divider.divider--dark
+                tbody
+                    tr.data-table__clickable-row
+                        td 123
+                        td อัตราส่วนมารดาตาย(ไม่เกิน 15 ต่อการเกิดมีชีพแสนคน)
+                        td 50
+                        td
+                            lx-dropdown(position="right", from-top)
+                                button.btn.btn--l.btn--grey.btn--icon(lx-ripple, lx-dropdown-toggle)
+                                    i.mdi.mdi-dots-vertical
+                                        
+                                lx-dropdown-menu
+                                    ul
+                                        li
+                                            a(href="#!/kpi/1").dropdown-link 
+                                                i.mdi.mdi-chart-bar
+                                                | &nbsp; ดูข้อมูลผลงาน
+                    tr.data-table__clickable-row
+                        td 143
+                        td ร้อยละของเด็กแรกเกิด - ต่ำกว่า 6 เดือน กินนมแม่อย่างเดียว
+                        td 98
+                        td
+                            lx-dropdown(position="right", from-top)
+                                button.btn.btn--l.btn--grey.btn--icon(lx-ripple, lx-dropdown-toggle)
+                                    i.mdi.mdi-dots-vertical
+                                        
+                                lx-dropdown-menu
+                                    ul
+                                        li
+                                            a.dropdown-link Action
+                                        li
+                                            a.dropdown-link XXXXXX
+                    tr.data-table__clickable-row
+                        td 23
+                        td ร้อยละเด็กอายุ 18,30 เดือน ได้รับการคัดกรองพัฒนาการ 
+                        td 30
+                        td
+                            lx-dropdown(position="right", from-top)
+                                button.btn.btn--l.btn--grey.btn--icon(lx-ripple, lx-dropdown-toggle)
+                                    i.mdi.mdi-dots-vertical
+                                        
+                                lx-dropdown-menu
+                                    ul
+                                        li
+                                            a.dropdown-link Action
+                                        li
+                                            a.dropdown-link XXXXXX
+            button.btn.btn--l.btn--blue.btn--flat(lx-ripple) View all
+                                                
+    div(flex-item) 
+        .fs-title.display-block 
+            i.icon.icon--l.icon--blue.icon--flat.mdi.mdi-tooltip-text
+            | &nbsp; ตัวชี้วัดจังหวัด
+            
+        .data-table-container
+            table.data-table.data-table--has-secondary
+                thead
+                    tr
+                        th รหัส
+                        th ชื่อตัวชี้วัด
+                        th %
+                        th 
+                    tr
+                        td(colspan="4").divider.divider--dark
+                tbody
+                    tr.data-table__clickable-row
+                        td 134
+                        td ร้อยละเด็กอายุ 5ปีได้รับบริการสุขภาพครบถ้วนตามเกณฑ์
+                        td 50
+                        td                           
+                            lx-dropdown(position="right", from-top)
+                                button.btn.btn--l.btn--grey.btn--icon(lx-ripple, lx-dropdown-toggle)
+                                    i.mdi.mdi-dots-vertical
+                                        
+                                lx-dropdown-menu
+                                    ul
+                                        li
+                                            a.dropdown-link Action
+                                        li
+                                            a.dropdown-link XXXXXX
+                    tr.data-table__clickable-row
+                        td 129
+                        td ร้อยละของการเข้าถึงบริการสุขภาพช่องปาก มากกว่าหรือเท่ากับ 20 ของประชากรในเขต
+                        td 65
+                        td                           
+                            lx-dropdown(position="right", from-top)
+                                button.btn.btn--l.btn--grey.btn--icon(lx-ripple, lx-dropdown-toggle)
+                                    i.mdi.mdi-dots-vertical
+                                        
+                                lx-dropdown-menu
+                                    ul
+                                        li
+                                            a.dropdown-link Action
+                                        li
+                                            a.dropdown-link XXXXXX
+                                            
+                    tr.data-table__clickable-row
+                        td 143
+                        td ร้อยละของประชากรตามกลุ่มอายุได้รับการเยี่ยมบ้าน กลุ่มผู้ป่วยโรคจิตเวช (F20-F299)
+                        td 70
+                        td                           
+                            lx-dropdown(position="right", from-top)
+                                button.btn.btn--l.btn--grey.btn--icon(lx-ripple, lx-dropdown-toggle)
+                                    i.mdi.mdi-dots-vertical
+                                        
+                                lx-dropdown-menu
+                                    ul
+                                        li
+                                            a.dropdown-link Action
+                                        li
+                                            a.dropdown-link XXXXXX
+    
+            button.btn.btn--l.btn--blue.btn--flat(lx-ripple) View all
+
+br
+div(class="tc-white-1", flex-container="row", flex-gutter="24")
+    div(flex-item="4")
+        div(class="p+ bgc-grey-100") 
+            | flex = 4
+            br
+            br
+            br
+            br
+    div(flex-item="4")
+        div(class="p+ bgc-grey-100") 
+            | flex = 4
+            br
+            br
+            br
+            br
+    div(flex-item="4")
+        div(class="p+ bgc-grey-100") 
+            | flex = 4
+            br
+            br
+            br
+            br
+                                                                 
+div(class="mt++", flex-container="row", flex-gutter="24")
+    div(flex-item) 
+        .fs-title.display-block 
+            i.icon.icon--l.icon--pink.icon--flat.mdi.mdi-tooltip-image
+            | &nbsp; ตัวชี้วัด QOF
+        .data-table-container
+            table.data-table.data-table--has-secondary
+                thead
+                    tr
+                        th รหัส
+                        th ชื่อตัวชี้วัด
+                        th %
+                        th 
+                    tr
+                        td(colspan="4").divider.divider--dark
+                tbody
+                    tr.data-table__clickable-row
+                        td 123
+                        td ร้อยละของประชากรตามกลุ่มอายุได้รับการเยี่ยมบ้าน กลุ่มผู้ป่วยโรคจิตเวช (F20-F299)
+                        td 50
+                        td
+                            lx-dropdown(position="right", from-top)
+                                button.btn.btn--l.btn--grey.btn--icon(lx-ripple, lx-dropdown-toggle)
+                                    i.mdi.mdi-dots-vertical
+                                        
+                                lx-dropdown-menu
+                                    ul
+                                        li
+                                            a.dropdown-link Action
+                                        li
+                                            a.dropdown-link XXXXXX
+                    tr.data-table__clickable-row
+                        td 123
+                        td อัตราส่วนมารดาตาย(ไม่เกิน 15 ต่อการเกิดมีชีพแสนคน)
+                        td 50
+                        td
+                            lx-dropdown(position="right", from-top)
+                                button.btn.btn--l.btn--grey.btn--icon(lx-ripple, lx-dropdown-toggle)
+                                    i.mdi.mdi-dots-vertical
+                                        
+                                lx-dropdown-menu
+                                    ul
+                                        li
+                                            a.dropdown-link Action
+                                        li
+                                            a.dropdown-link XXXXXX
+                    tr.data-table__clickable-row
+                        td 123
+                        td อัตราส่วนมารดาตาย(ไม่เกิน 15 ต่อการเกิดมีชีพแสนคน)
+                        td 50
+                        td
+                            lx-dropdown(position="right", from-top)
+                                button.btn.btn--l.btn--grey.btn--icon(lx-ripple, lx-dropdown-toggle)
+                                    i.mdi.mdi-dots-vertical
+                                        
+                                lx-dropdown-menu
+                                    ul
+                                        li
+                                            a.dropdown-link Action
+                                        li
+                                            a.dropdown-link XXXXXX
+            button.btn.btn--l.btn--blue.btn--flat(lx-ripple) View all
+                                                
+    div(flex-item) 
+        .fs-title.display-block 
+            i.icon.icon--l.icon--red.icon--flat.mdi.mdi-tooltip-text
+            | &nbsp; ตัวชี้วัด สปสช.
+            
+        .data-table-container
+            table.data-table.data-table--has-secondary
+                thead
+                    tr
+                        th รหัส
+                        th ชื่อตัวชี้วัด
+                        th %
+                        th 
+                    tr
+                        td(colspan="4").divider.divider--dark
+                tbody
+                    tr.data-table__clickable-row
+                        td 123
+                        td อัตราส่วนมารดาตาย(ไม่เกิน 15 ต่อการเกิดมีชีพแสนคน)
+                        td 50
+                        td                           
+                            lx-dropdown(position="right", from-top)
+                                button.btn.btn--l.btn--grey.btn--icon(lx-ripple, lx-dropdown-toggle)
+                                    i.mdi.mdi-dots-vertical
+                                        
+                                lx-dropdown-menu
+                                    ul
+                                        li
+                                            a.dropdown-link Action
+                                        li
+                                            a.dropdown-link XXXXXX
+                    tr.data-table__clickable-row
+                        td 123
+                        td อัตราส่วนมารดาตาย(ไม่เกิน 15 ต่อการเกิดมีชีพแสนคน)
+                        td 50
+                        td                           
+                            lx-dropdown(position="right", from-top)
+                                button.btn.btn--l.btn--grey.btn--icon(lx-ripple, lx-dropdown-toggle)
+                                    i.mdi.mdi-dots-vertical
+                                        
+                                lx-dropdown-menu
+                                    ul
+                                        li
+                                            a.dropdown-link Action
+                                        li
+                                            a.dropdown-link XXXXXX
+                                            
+                    tr.data-table__clickable-row
+                        td 123
+                        td อัตราส่วนมารดาตาย(ไม่เกิน 15 ต่อการเกิดมีชีพแสนคน)
+                        td 50
+                        td                           
+                            lx-dropdown(position="right", from-top)
+                                button.btn.btn--l.btn--grey.btn--icon(lx-ripple, lx-dropdown-toggle)
+                                    i.mdi.mdi-dots-vertical
+                                        
+                                lx-dropdown-menu
+                                    ul
+                                        li
+                                            a.dropdown-link Action
+                                        li
+                                            a.dropdown-link XXXXXX
+    
+            button.btn.btn--l.btn--blue.btn--flat(lx-ripple) View all

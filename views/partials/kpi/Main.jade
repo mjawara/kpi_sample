@@ -1,0 +1,109 @@
+.fs-headline.display-block
+    i.icon.icon--l.icon--indigo.icon--circled.mdi.mdi-chart-line
+    | &nbsp; ข้อมูลตัวชี้วัด
+
+br
+    
+div(flex-container="row", flex-gutter="24")
+
+    div(flex-item="6")
+        .card
+            div(class="p+")
+                    div(flex-container="row", flex-gutter="24")
+                        div(flex-item)
+                            lx-text-field(label="ชื่อตัวชี้วัด")
+                                input(type="text", ng-model="indicator.name")
+                        div(flex-item="2")
+                            lx-text-field(label="เป้าหมาย")
+                                input(type="text", ng-model="indicator.target")
+                    div(flex-container="row", flex-gutter="24")                
+                        
+                        div(flex-item="2")
+                            lx-text-field(label="ผลงาน")
+                                input(type="text", ng-model="indicator.result")
+                        div(flex-item)
+                            lx-text-field(label="ประชากรกลุ่มเป้าหมาย")
+                                input(type="text", ng-model="indicator.pop")
+            .card__actions
+                .fab
+                    button.fab__primary.btn.btn--l.btn--red.btn--fab(lx-ripple, lx-tooltip="เครื่องมือ", tooltip-position="right")
+                        i.mdi.mdi-dots-horizontal
+                        i.mdi.mdi-filter-variant
+                            
+                    div.fab__actions.fab__actions--up
+                        button.btn.btn--m.btn--blue.btn--fab(lx-ripple, lx-tooltip="ดาวน์โหลดคู่มือ", tooltip-position="right")
+                            i.mdi.mdi-download
+                        button.btn.btn--m.btn--green.btn--fab(lx-ripple, lx-tooltip="เปิดหน้าต่างใหม่", tooltip-position="right")
+                            i.mdi.mdi-launch        
+                            
+    div(flex-item="6")
+        .card
+            div(class="p+") 
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+br
+
+div(flex-container="row", flex-gutter="24")
+    div(flex-item="6")
+        .card
+            div(class="p+")
+                .data-table-container
+                    table.data-table.data-table--has-secondary
+                        thead
+                            tr
+                                th อำเภอ
+                                th เป้าหมาย
+                                th ผลงาน
+                                th %
+                                th ผ่าน
+                                th
+                            tr
+                                td(colspan="6").divider.divider--dark
+                        tbody
+                            tr.data-table__clickable-row
+                                td เมือง
+                                td 1,800
+                                td 90
+                                td 10%
+                                td 
+                                    i.icon.icon--l.icon--green.icon--flat.mdi.mdi-checkbox-marked-circle
+                                td
+                                    lx-dropdown(position="right", from-top)
+                                        button.btn.btn--l.btn--grey.btn--icon(lx-ripple, lx-dropdown-toggle)
+                                            i.mdi.mdi-dots-vertical
+                                                
+                                        lx-dropdown-menu
+                                            ul
+                                                li
+                                                    a(href="#!/kpi/1").dropdown-link 
+                                                        | &nbsp; ดูข้อมูลรายหน่วยบริการ
+                            tr.data-table__clickable-row
+                                td กันทรวิชัย
+                                td 1,900
+                                td 10
+                                td 10%
+                                td 
+                                    i.icon.icon--l.icon--red.icon--flat.mdi.mdi-close-circle-outline    
+                                td
+                                    lx-dropdown(position="right", from-top)
+                                        button.btn.btn--l.btn--grey.btn--icon(lx-ripple, lx-dropdown-toggle)
+                                            i.mdi.mdi-dots-vertical
+                                                
+                                        lx-dropdown-menu
+                                            ul
+                                                li
+                                                    a(href="#!/kpi/1").dropdown-link 
+                                                        | &nbsp; ดูข้อมูลรายหน่วยบริการ
+    div(flex-item="6")
+        .card
+            div(class="p+")
+                br
+                br
+                br
+                br
+                br
